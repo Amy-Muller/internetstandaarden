@@ -240,7 +240,7 @@ Footer {
   background-color: #f0e9e1;
   height: 7vw;
   padding: 2vw;
-  font-family: "Bebaslight", Courier, monospace;
+  font-family: "Bebaslight", "avenir" ,Courier, monospace;
   color: #8e7a65;
  
 }
@@ -253,7 +253,7 @@ Footer {
   }
 
 .footerlijst a {
-  font-family: "Bebaslight", Courier, monospace;
+  font-family: "Bebaslight", "avenir" ,Courier, monospace;
   text-decoration: none;
 }
   
