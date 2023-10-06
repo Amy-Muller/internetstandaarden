@@ -245,9 +245,10 @@ p {
 .bttncontact {
   background-color: #ebe3d9;
   text-align: center;
-  padding: 20px 30px;
+  padding: 1vw 2vw;
   color: #8e7a65;
   font-family: "Bebas", "boldav", Times, serif;
+  font-size: 1.3em;
   width: max-content;
 }
 
