@@ -1,6 +1,7 @@
-body {
-  height: 1200px;
-  width: 800px;
+
+*{
+  margin: 0;
+  max-width: 100vw;
 }
 
 .backgroundimage {
@@ -10,20 +11,15 @@ body {
   background-color: #e8ded1;
 }
 
+
+
 H1, H2{
   color: #8E7A65;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-#gettoknowme
-{margin-left: 5vw;}
-
 p {
   color:#8E7A65;
-}
-
-.aboutme {
-  margin-left: 5vw;
 }
 
 ul {
@@ -72,28 +68,47 @@ margin: 7vw;
 
 
 #quote {
-background-color:#e8ded1;
+background-color:#E6DBCE;
 width:70vw;
 padding: 30px;
 text-align: center;
 margin-left: 7vw;
 }
 
-.leftintroduction {
+.papa {
   display:flex;
-  width:100%;
-  height:100vh;
-  justify-content: left;
+  width: 90vw;
+  gap: 5vw;
+  margin:10vh;
 }
 
-.middleintroduction {
-  display:flex;
+.papa h2 {
+  margin-bottom: 2vw;
 }
 
-.hobbies {
-  display:flex;
+.block {
+  width: 100%;
+  background-color:#F0E9E1;
+  -webkit-box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.25);
+  -moz-box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.25);
+  box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.25);
+  padding: 2em;
 }
 
-#imageleft {
-  float: left;
+.block:hover {
+  background-color:#8E7A65;
+
+}
+
+.block p {
+  color:#F0E9E1;
+}
+
+.block:hover h2{
+  color:#F0E9E1;
+}
+
+Footer { 
+  background-color: #F0E9E1;
+  height: 80px;
 }
