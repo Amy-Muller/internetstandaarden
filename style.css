@@ -10,12 +10,12 @@
 
 @font-face {
   font-family: avenir;
-  src: url(lettertypen/Avenir\ Next\ Condensed.ttc);
+  src: url(lettertypen/Avenir\Next\Condensed.ttc);
 }
 
 @font-face {
   font-family: boldav;
-  src: url(lettertypen/DIN\ Condensed\ Bold.ttf);
+  src: url(lettertypen/DIN\Condensed\Bold.ttf);
 }
 
 * {
@@ -53,16 +53,16 @@ h1:not(.indexheading) {
 
 p {
   color: #8e7a65;
-  font-family: "Bebaslight", "avenir" ,Courier, monospace;
+  font-family: "Bebaslight", "avenir", Courier, monospace;
 }
 
- .nav {
+/*nav layout */
+.nav {
   display: block;
   background-color: #e8ded1;
   width: 100vw;
   list-style-type: none;
 }
-
 
 .nav li {
   display: inline-block;
@@ -86,49 +86,20 @@ p {
   box-shadow: 0px 35px 106px -11px rgba(69, 30, 8, 0.58);
 }
 
-.containerblocks {
-  display: flex;
-  width: 90vw;
-  gap: 5vw;
-  margin: 10vh;
-}
+/*blok met tekst en foto over wie ik ben in het kort / index*/
 
-.containerblocks h2 {
-  margin-bottom: 2vw;
-}
-
-.block {
-  width: 100%;
-  background-color: #f0e9e1;
-  -webkit-box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.25);
-  box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.25);
-  padding: 2em;
-}
-
-.block:hover {
-  background-color: #8e7a65;
-  transition: background-color 0.7s ease;
-}
-
-.block p {
-  color: #f0e9e1;
-}
-
-.block:hover h2 {
-  color: #f0e9e1;
-}
-
-.myworkindex {
-  text-align: center;
-}
-
-.startingdesigner {
+.blokhomepageabtme {
   display: flex;
   flex-direction: row;
   background-color: #e3d9ca;
-  padding: 7vw;
+  padding: 7vw 1vw 7vw 7vw;
   margin-top: 50vw;
+}
+
+.textabtme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .textintro {
@@ -137,16 +108,19 @@ p {
 }
 
 .textintro p {
-  padding: 10px;
-  padding-right: 12vw;
-  padding-left: 12vw;
+  padding: 2vw 1vw;
 }
 
-.textstartingdesigner {
+.profiel {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
+.profielfoto {
+  width: 40%;
+  object-fit: contain;
+}
+
+/*link naar meer info over mezelf /index*/
 
 .abtmelink {
   background-color: #ebe3d9;
@@ -163,43 +137,73 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.checkoutmywork {
+/*blok met portfolio eyecatcher / index*/
+
+.portfoliovak {
   display: flex;
   background-color: #ebe3d9;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
   height: 200px;
+  padding: 11vw 15vw 11vw 15vw;
 }
 
-.checkoutmywork h3,
-p {
+.mijnwerktext {
   text-align: center;
 }
 
-.buttonwork {
+.linktmw {
   font-size: 100px;
 }
 
-.buttonwork a:hover {
+.linktmw a:hover {
   color: #fff;
   box-shadow: inset 500px 0 0 0 #d1c0a8;
 }
 
-.buttonwork a {
+.linktmw a {
   transition: color 0.5s ease-in-out, box-shadow 0.8s ease-in-out;
   color: #8e7a65;
   text-decoration: none;
 }
 
-.checkoutmywork {
-  padding: 11vw 15vw 11vw 15vw;
+/*3 blokken met informatie / about me */
+
+.informatievakken {
+  display: flex;
+  width: 90vw;
+  gap: 5vw;
+  margin: 10vh;
 }
 
-.contactpage {
-  display: flex;
-  align-items: center;
+.informatievakken h2 {
+  margin-bottom: 2vw;
 }
+
+.vak {
+  width: 100%;
+  background-color: #f0e9e1;
+  -webkit-box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.25);
+  padding: 2em;
+}
+
+.vak:hover {
+  background-color: #8e7a65;
+  transition: background-color 0.7s ease;
+}
+
+.vak p {
+  color: #f0e9e1;
+}
+
+.vak:hover h2 {
+  color: #f0e9e1;
+}
+
+/* scrollende horizontale portfolio / my work */
 
 .scrollcontainer {
   background-color: #f0e9e1;
@@ -209,24 +213,21 @@ p {
   margin: 3vw;
 }
 
-.buttonwithphoto {
+.scrollcontainer img:not(.webdesignformaat) {
+  height: 35%;
+  width: 35%;
+}
+
+.webdesignformaat{
+  height:75%;
+  width:75%;
+}
+
+/*contact pagina*/
+
+.contactpage {
   display: flex;
-  flex-direction: column;
-  row-gap: 3vw;
   align-items: center;
-}
-
-.buttoninstagram {
-  background-color: #ebe3d9;
-  text-align: center;
-  padding: 10px;
-  color: #8e7a65;
-  font-family: "Bebas", "boldav", Times, serif;
-  width: max-content;
-}
-
-.buttoninstagram:hover {
-  background-color: #e3d9ca;
 }
 
 .photomobile {
@@ -234,32 +235,57 @@ p {
   justify-content: center;
 }
 
+.buttonwithphoto {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vw;
+  align-items: center;
+}
+
+.bttncontact {
+  background-color: #ebe3d9;
+  text-align: center;
+  padding: 20px 30px;
+  color: #8e7a65;
+  font-family: "Bebas", "boldav", Times, serif;
+  width: max-content;
+}
+
+.bttncontact:hover {
+  background-color: #e3d9ca;
+}
+
+.contactpage img{
+  height:45%;
+  width:45%;
+}
+
+
 Footer {
   background-color: #f0e9e1;
   height: 8vw;
   padding: 2vw;
-  font-family: "Bebaslight", "avenir" ,Courier, monospace;
+  font-family: "Bebaslight", "avenir", Courier, monospace;
   color: #8e7a65;
- 
+  text-align: center;
 }
 
 .footerlijst {
-  text-align: center;
   list-style-type: none;
   text-decoration: none;
-  margin-right:2em;
-  }
+  margin-right: 2em;
+}
 
 .footerlijst a {
-  font-family: "Bebaslight", "avenir" ,Courier, monospace;
+  font-family: "Bebaslight", "avenir", Courier, monospace;
   text-decoration: none;
 }
-  
+
 .footerlijst li {
   display: inline-block;
   padding: 0px 20px 20px 20px;
 }
 
 .footerlijst li a:hover {
-  color:#2f2922;
+  color: #2f2922;
 }
