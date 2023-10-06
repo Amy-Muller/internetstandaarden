@@ -8,6 +8,11 @@
   src: url(/FiraSansCondensed-Light.ttf);
 }
 
+@font-face {
+  font-family: avenir;
+  src: url(/Avenir\ Next\ Condensed.ttc);
+}
+
 * {
   margin: 0;
   max-width: 100vw;
@@ -43,7 +48,7 @@ h1:not(.indexheading) {
 
 p {
   color: #8e7a65;
-  font-family: "Bebaslight", Courier, monospace;
+  font-family: "Bebaslight", "avenir" ,Courier, monospace;
 }
 
  .nav {
