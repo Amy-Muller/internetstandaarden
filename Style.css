@@ -1,21 +1,21 @@
 @font-face {
   font-family: Bebas;
-  src: url(/BebasNeue-Regular.ttf);
+  src: url(lettertypen/BebasNeue-Regular.ttf);
 }
 
 @font-face {
   font-family: Bebaslight;
-  src: url(/FiraSansCondensed-Light.ttf);
+  src: url(lettertypen/FiraSansCondensed-Light.ttf);
 }
 
 @font-face {
   font-family: avenir;
-  src: url(/Avenir\ Next\ Condensed.ttc);
+  src: url(lettertypen/Avenir\ Next\ Condensed.ttc);
 }
 
 @font-face {
   font-family: boldav;
-  src: url(/DIN\ Condensed\ Bold.ttf);
+  src: url(lettertypen/DIN\ Condensed\ Bold.ttf);
 }
 
 * {
