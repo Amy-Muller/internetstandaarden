@@ -218,9 +218,9 @@ p {
   width: 35%;
 }
 
-.webdesignformaat{
-  height:75%;
-  width:75%;
+.webdesignformaat {
+  height: 75%;
+  width: 75%;
 }
 
 /*contact pagina*/
@@ -255,11 +255,10 @@ p {
   background-color: #e3d9ca;
 }
 
-.contactpage img{
-  height:45%;
-  width:45%;
+.contactpage img {
+  height: 45%;
+  width: 45%;
 }
-
 
 Footer {
   background-color: #f0e9e1;
